@@ -9,3 +9,6 @@ from sklearn.preprocessing import StandardScaler
 
 passengers = pd.read_csv("passengers.csv")
 print(passengers.head())
+
+passengers["Sex"] = passengers["Sex"].map({'female': '1', 'male': '0'})
+print(passengers.head())
