@@ -12,3 +12,7 @@ print(passengers.head())
 
 passengers["Sex"] = passengers["Sex"].map({'female': '1', 'male': '0'})
 print(passengers.head())
+
+# fill nan values in age column
+passengers['Age'].fillna(value=passengers['Age'].mean(), inplace=True)
+print(passengers['Age'].values)
