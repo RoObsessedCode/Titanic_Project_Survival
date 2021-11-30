@@ -16,3 +16,9 @@ print(passengers.head())
 # fill nan values in age column
 passengers['Age'].fillna(value=passengers['Age'].mean(), inplace=True)
 print(passengers['Age'].values)
+
+#create first class column
+passengers['FirstClass'] = passengers['Pclass].apply(lambda p: 1 if p ==1 else 0)
+
+#create second class column
+passengers['SecondClass'] = passengers['Pclass'].apply(lambda p: 1 if p == 2 else 0)
