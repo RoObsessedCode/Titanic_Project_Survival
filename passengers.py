@@ -22,3 +22,9 @@ passengers['FirstClass'] = passengers['Pclass].apply(lambda p: 1 if p ==1 else 0
 
 #create second class column
 passengers['SecondClass'] = passengers['Pclass'].apply(lambda p: 1 if p == 2 else 0)
+
+
+features = passengers[['Sex', 'Age', 'FirstClass', 'SecondClass']]
+survival = passengers['Survived]
+
+
