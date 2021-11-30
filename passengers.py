@@ -27,4 +27,4 @@ passengers['SecondClass'] = passengers['Pclass'].apply(lambda p: 1 if p == 2 els
 features = passengers[['Sex', 'Age', 'FirstClass', 'SecondClass']]
 survival = passengers['Survived]
 
-
+train_features, test_features, train_labels, test_labels = train_test_split(features, survival, test_size = 0.2)
