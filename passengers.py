@@ -33,3 +33,7 @@ train_features, test_features, train_labels, test_labels = train_test_split(feat
 scaler = StandardScaler()
 train_features = scaler.fit_transform(train_features)
 test_features = scaler.transform(test_features)
+
+#create and train model
+model = LogisticRegression()
+model.fit(train_features, train_labels)
