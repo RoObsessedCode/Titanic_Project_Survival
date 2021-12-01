@@ -28,3 +28,8 @@ features = passengers[['Sex', 'Age', 'FirstClass', 'SecondClass']]
 survival = passengers['Survived]
 
 train_features, test_features, train_labels, test_labels = train_test_split(features, survival, test_size = 0.2)
+
+#scale feature data
+scaler = StandardScaler()
+train_features = scaler.fit_transform(train_features)
+test_features = scaler.transform(test_features)
