@@ -43,3 +43,11 @@ model.score(train_features, train_labels)
 
 #score the model on the test data
 model.score(test_features, test_labels)
+
+#sample passenger features
+Jack = np.array([0.0,20.0,0.0,0.0])
+Rose = np.array([1.0,17.0,1.0,0.0])
+Rodawg = np.array([0.0,29.0,1.0,0.0])
+
+
+sample_passengers = np.array([Jack, Rose, Rodawg])
