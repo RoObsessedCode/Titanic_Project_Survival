@@ -51,3 +51,5 @@ Rodawg = np.array([0.0,29.0,1.0,0.0])
 
 
 sample_passengers = np.array([Jack, Rose, Rodawg])
+
+sample_passengers = scaler.transform(sample_passengers)
