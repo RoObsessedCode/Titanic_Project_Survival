@@ -53,3 +53,10 @@ Rodawg = np.array([0.0,29.0,1.0,0.0])
 sample_passengers = np.array([Jack, Rose, Rodawg])
 
 sample_passengers = scaler.transform(sample_passengers)
+
+results1 = model.predict(sample_passengers)
+
+results2 = model.predict(sample_passengers)
+
+print(results1)
+print(results2)
