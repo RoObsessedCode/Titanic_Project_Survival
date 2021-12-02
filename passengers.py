@@ -37,3 +37,9 @@ test_features = scaler.transform(test_features)
 #create and train model
 model = LogisticRegression()
 model.fit(train_features, train_labels)
+
+#score the model on the train data
+model.score(train_features, train_labels)
+
+#score the model on the test data
+model.score(test_features, test_labels)
